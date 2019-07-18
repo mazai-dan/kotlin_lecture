@@ -39,7 +39,7 @@ fun main() {
     println("----------------------")
 
     //可变参数可以借助于spread operator以剧名参数的形式传递
-    test4(strings = *arrayOf("a","b","c"))
+    test4( strings = *arrayOf("a","b","c"))
 
     /*
         在Kotlin中调用java方法时不能使用剧名参数的预防，因为Java的字节码并不会保留方法参数名信息

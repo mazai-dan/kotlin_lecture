@@ -53,5 +53,13 @@ fun main() {
     println("-------------------")
 
     val s:String? = item//允许，总是可以的
+    /*
+       把一个可能为空的的平台类型的值赋给Kotlin中声明的不可空变量的时候，
+     Kotlin编译器会默认生成一个assert，这会防止Kotlin的不可空变量持有null值；同样，这一点也适用于Kotlin方法参数传递
+     总体来说，Kotlin会竭尽所能房主null的赋值蔓延到其他地方，而是在发生问题指出就立即通过assert来解决
+     */
+
     val s2:String = item//允许，在运行期间可能会抛出异常
+
+
 }
